@@ -1,0 +1,84 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+
+}
+
+header {
+    background-color:grey ;
+    color:;
+    padding: 10px;
+    text-align: center;
+}
+h1 {
+    color:Crimson ; /* Replace with your preferred color code */
+
+
+/* Change color of h2 */
+h2 {
+    color: crimson; /* Replace with your preferred color code */
+}
+
+/* Change color of h3 */
+h3 {
+    color: crimson; /* Replace with your preferred color code */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: greenyellow;
+    color: lavender;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
