@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Employee Network - Services</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Corporate Employee Network</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <article class="service">
+            <h3>Employee Training Programs</h3>
+            <p>
+                We offer comprehensive training programs to enhance the skills and knowledge of your employees.
+                Our training modules cover a wide range of topics, including leadership, communication, and
+                technical skills.
+            </p>
+            <img src="C:\Users\srinidhi\OneDrive\Desktop\simage1.jpg" height="150px" weight="150px">
+        </article>
+
+        <article class="service">
+            <h3>Employee Wellness Initiatives</h3>
+            <p>
+                The well-being of your employees is crucial. Our wellness initiatives focus on promoting a
+                healthy work-life balance, stress management, and overall mental and physical well-being.
+            </p>
+            <img src="C:\Users\srinidhi\OneDrive\Desktop\simage2.jpg" height="150px" weight="150px">
+        </article>
+
+        <article class="service">
+            <h3>Corporate Events and Team Building</h3>
+            <p>
+                Foster a sense of camaraderie among your employees through our corporate events and team-building
+                activities. These events are designed to strengthen teamwork, communication, and collaboration
+                within your organization.
+            </p>
+            <img src="C:\Users\srinidhi\OneDrive\Desktop\simage3.jpg" height="150px" weight="150px">
+        </article>
+    <script>
+   
+        fetch('/api/services')
+            .then(response => response.json())
+            .then(data => {
+                const servicesList = document.getElementById('services-list');
+                Object.values(data).forEach(service => {
+                    servicesList.innerHTML += `
+                        <article class="service">
+                            <h3>${service.name}</h3>
+                            <p>${service.description}</p>
+                        </article>
+                    `;
+                });
+            });
+    </script>
+</body>
+</html>
