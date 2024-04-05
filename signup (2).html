@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Signup Page</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Corporate Employee Welfare</h1>
+    </div>
+    <div class="container">
+        <div class="signup-box">
+            <form id="signupForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <button type="button" onclick="signup()">Signup</button>
+            </form>
+        </div>
+        <div class="login-link">
+            <p>Already have an account? <a href="http://127.0.0.1:5500/login.html">Login here</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
