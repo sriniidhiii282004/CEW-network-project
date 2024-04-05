@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEW Network</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color:grey ;
+            background-size: cover;
+            color: #ffffff; /* Default text color on top of the background */
+        }
+
+        header {
+            background-color: #808080; /* Gray color for the header */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #404040; /* Darker gray color for the navigation bar */
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+            padding: 20px;
+        }
+
+        .progress-container {
+            padding: 20px;
+            color: black;
+        }
+
+        progress {
+            width: 100%;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CEW Network - All Company Growth</h1>
+    </header>
+
+
+    <nav>
+        <a href="http://127.0.0.1:5500/home.html">Home</a>
+        <a href="#">Events</a>
+        <a href="http://127.0.0.1:5500/about%20us.html#">About Us</a>
+        <a href="http://127.0.0.1:5500/company%20growth.html">All Company Growth</a>
+        <a href="http://127.0.0.1:5500/profile.html">Profile</a>
+    </nav>
+    
+
+    <div class="progress-container">
+       
+        <label for="microsoft">Microsoft</label>
+        <progress id="microsoft" value="60" max="100"> 60% </progress>
+        
+        <label for="google">Google</label>
+        <progress id="google" value="80" max="100"> 80% </progress>
+     
+        <label for="wipro">Wipro</label>
+        <progress id="wipro" value="75" max="100"> 75% </progress>
+       
+        <label for="hcl">HCL Technologies</label>
+        <progress id="hcl" value="75" max="100"> 75% </progress>
+       
+        <label for="">Tech Mahindra</label>
+        <progress id="techmahindra" value="80" max="100"> 80% </progress>
+       
+        <label for="cognizant">Cognizant</label>
+        <progress id="cognizant" value="60" max="100"> 60% </progress>
+    </div>
+
+    <p>Explore the growth percentages of different companies using native HTML progress elements. This represents recent growth trends in the market for the specified companies.</p>
+
+    <!-- Add Bootstrap JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
