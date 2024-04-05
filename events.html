@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="events.css">
+    <title>Chat App</title>
+</head>
+<body>
+    <div class="task">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="about us.html">About Us</a>
+            <a href="company growth.html">All Company Growth</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </div>
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <div id="message-input-container">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <label for="image-input" id="upload-icon">&#128247;</label>
+            <input type="file" id="image-input" accept="image/*">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="events.js"></script>
+</body>
+</html>
